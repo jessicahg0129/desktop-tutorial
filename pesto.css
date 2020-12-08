@@ -1,0 +1,372 @@
+/*-----共用-----*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Garamond",serif;
+}
+.container{
+    width: 1200px;
+    padding: 100px 0;
+    margin: auto;
+}
+.title{
+    color: #000;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.title::after{
+    content: '↓';
+    font-size: 46px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 50px;
+    left: 590px;
+}
+.title h2{
+    font-size: 46px;
+    font-weight: 500;
+    padding: 50px 0;
+    letter-spacing: .2rem;
+    position: relative;
+}
+.title h2::before{
+    content: '';
+    width: 60px;
+    height: 2px;
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 580px;
+}
+.title p{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 30px;
+    color: #90909b;
+}
+/*-----banner-----*/
+.banner{
+    background: url(pesto/asset\ 11.jpeg) no-repeat center / 95% 95%;
+}
+.banner .container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner h1{
+    width: 255px;
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+.banner h1 span{
+    height: 1px;
+    font-size: 1px;
+    display: block;
+    overflow: hidden;
+}
+.banner h1 a{
+    display: block;
+}
+.banner h1 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.banner .title{
+    color: #fff;
+    position: relative;
+}
+.banner .title h2{
+    font-size: 46px;
+    font-weight: 500;
+    padding-top: 50px;
+    letter-spacing: .2rem;
+    position: relative;
+}
+.banner .title::after{
+    display: none;
+}
+.banner .title h2::before{
+    content: '';
+    width: 60px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+.banner h3{
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    top: -300px;
+    left: 190px;
+    text-align: center;
+    line-height: 2.5rem;
+    font-style: italic;
+}
+.banner h3 span{
+    display: block;
+}
+.bnt-our-menu a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 60px;
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 140px;
+    left: 640px;
+    z-index: 1;
+    overflow: hidden;
+}
+.bnt-our-menu a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.bnt-our-menu a:hover::after{
+    top: 0;
+}
+.bnt-our-menu a:hover{
+    border: none;
+}
+/*-----welcome-----*/
+.welcome .group{
+    display: flex;
+    justify-content: space-between;
+}
+.welcome .box{
+    width: 585px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.welcome .item{
+    overflow: hidden;
+    position: relative;
+}
+.welcome .item:hover{
+    filter: brightness(50%)
+}
+.welcome .item:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+} 
+.welcome .item::before{
+    content: '↗';
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    z-index: 2;
+}
+.welcome .item::after{
+    content: '↙';
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 120px;
+    left: 265px;
+    z-index: 2;
+}
+.welcome .item-side::before{
+    top: 300px;
+    right: 255px;
+}
+.welcome .item-side::after{
+    bottom: 300px;
+    left: 255px;
+}
+.welcome .item a{
+    display: block;
+}
+.welcome .item img{
+    width: 100%;
+    vertical-align: middle;
+}
+.welcome .item-side img{
+    height: 710px;
+}
+/*-----our-passion-history-----*/
+.our-passion-history .title-group{
+    display: flex;
+    justify-content: space-between;
+}
+.our-passion-history .title{
+    width: 585px;
+    text-align: left;
+}
+.our-passion-history .title p{
+    padding: 0;
+}
+.our-passion-history .title h2::before{
+    top: 0;
+    left: 0;
+}
+.our-passion-history .item::after{
+    bottom: 0px;
+}
+.our-passion-history .item-side::after{
+    display: none;
+}
+.our-passion-history .title-group{
+    padding-bottom: 100px;
+}
+.our-passion-history .item-group{
+    display: flex;
+    justify-content: space-between;
+}
+.our-passion-history .item-group .item{
+    width: 585px;
+    position: relative;
+    overflow: hidden;
+}
+.our-passion-history .item-group .item:hover{
+    filter: brightness(50%)
+}
+.our-passion-history .item-group .item:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.our-passion-history img{
+    width: 100%;
+    vertical-align: middle;
+}
+.our-passion-history .item a{
+    display: block;
+}
+.our-passion-history .text{
+    padding: 60px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.our-passion-history h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-top: 250px;
+}
+.our-passion-history span{
+    display: block;
+}
+.our-passion-history p{
+    font-size: 28px;
+    font-weight: 500;
+}
+.our-passion-history .price{
+    font-size: 80px;
+    font-weight: 500;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+/*-----menu-----*/
+.menu .title{
+    padding-bottom: 0;
+}
+.menu .title::after{
+    display: none;
+}
+.menu-group{
+    padding-bottom: 200px;
+    position: relative;
+}
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.menu-nav li +li{
+    margin-left: 60px;
+}
+.menu li{
+    position: relative;
+}
+.menu li a:active{
+    color: #000;
+}
+.menu li:hover a{
+    color: #000;
+}
+.menu li:not(:first-child)::before{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #aaa;
+    position: absolute;
+    top: 11px;
+    left: -45px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #aaa;
+    display: block;
+}
+.breakfast{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.breakfast .item{
+    width: 540px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.breakfast h3,
+.breakfast .price{
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.breakfast .price{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.breakfast p{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    color: #aaa;
+}
+.bnt-book-a-table a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  /*  right: 0;
+    margin: auto;*/
+}
